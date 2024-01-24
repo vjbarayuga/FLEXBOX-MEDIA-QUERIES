@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+}
+
+/* Flexbox properties */
+.flex-container {
+  /* Initial layout - row */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .flex-container {
+    /* Change layout to column below 600px */
+    flex-direction: column;
+    /* Adjust alignment for smaller screens */
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.boxwrap {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+#box1 {
+  margin-left: -100px;
+  background-color: rgb(43, 6, 250);
+}
+
+#box2 {
+  margin-top: -50px;
+  margin-bottom: -50px;
+  margin-left: 0px;
+  background-color: rgb(221, 6, 250);
+}
+
+#box3 {
+  margin-left: 100px;
+  background-color: rgb(250, 246, 6);
+}
